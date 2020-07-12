@@ -30,6 +30,7 @@ int* sortedSquares(int* A, int ASize, int* returnSize){
 	_arrOfSquares = squareElems(A, ASize, returnSize);
 	_arrOfSortedElems = sortArrayInAsc(_arrOfSquares, ASize);
 	
+	*returnSize = ASize;
 	return _arrOfSortedElems;
 
 }
